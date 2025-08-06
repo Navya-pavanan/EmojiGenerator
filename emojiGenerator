@@ -1,7 +1,14 @@
-import emoji
+
 import random
-import unicodedata
-all_emojis = [em for em in emoji.EMOJI_DATA.keys() if len(em) == 1]
-random_emoji = random.choice(all_emojis)
+import emoji
+
+
+emojis = [
+    "😀", "😂", "🤣", "😍", "😎", "🤯", "🥶", "🤡", "👻", "💩",
+    "🐶", "🐱", "🐵", "🦄", "🐸", "🌵", "🌈", "🔥", "🍕", "🎉"
+]
+
+random_emoji = random.choice(emojis)
+
 print("Your random emoji is:", random_emoji)
-print("Emoji name:", unicodedata.name(random_emoji, "Unknown Emoji"))
+
